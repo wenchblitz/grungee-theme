@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  
+
+Theme Name: Grungee
+Theme URI: 
+Description: Wordpress Theme
+Version: 
+Author: wenchblitz
+Author URI: http://www.wenchblitz.x10.mx/
+
+*/
+
+body { margin: 0; padding: 0; background: url(images/Grunge-BG.jpg) repeat 0 0; font-family: "Lucida Grande", sans-serif; font-weight: normal; font-size: 12px; line-height: normal;}
+
+@font-face {
+	font-family: Britannic;
+	src: url('BRITANIC_0.ttf');
+	
+	font-family: BradleyHand;
+	src: url('BRADHITC.TTF');			
+}
+
+@font-face {
+	font-family: Britannic;
+	src: url('BRITANIC_0.TTF');			
+}
+
+/*
+
+	h1, h2, h3, h4, h5 { margin: 0 auto 10px; font-family: Britannic, "Lucida Grande", sans-serif; color: #635e51; text-shadow: 0 1px 0 #f2ece4; font-size: 40px;}
+
+*/
+a { text-decoration: none;}
+a:hover { text-decoration: underline;}
+
+.clear { clear: both;}
+.left { float: left;}
+.right { float: right;}
+.more-link { margin: 0; padding: 0; position: absolute; left: 0; bottom: 0;}
+.footer_comm_author { font-family: Britannic, Tahoma; font-size: 14px; color: #4c4635; text-shadow: 0 1px 0 #b8b6af;}
+.post-edit-link { margin: 10px 0 0 0; padding: 0; float: right; font-weight: normal;}
+.edit-link { margin: 0 0 10px 0; padding: 0; float: right;}
+.edit-link > a { color: #A08E73;}
+.comment-edit-link { float: right;}
+.page-title, .navigation, #comments, #respond, .nocomments, .page .entry-title { 
+	margin: 0 auto; 
+	padding: 10px 0 10px 0;
+	position: relative; 
+	overflow: auto;
+	font-family: Britannic, Tahoma; 
+	font-size: 18px; 
+	color: #635e51; 
+	text-shadow: 0 1px 0 #fff;
+	text-align: center; 
+	border-top: thin solid #fff; 
+	border-bottom: thin solid #beb59d; 
+	background: url(images/post-bg.jpg) no-repeat 0 0;
+ }
+
+.vcard a { text-decoration: none; font-family: Britannic, Tahoma; font-size: 18px; color: #c9b290; text-shadow: 0 1px 0 #fff;}
+.vcard a:hover { text-decoration: underline;}
+ 
+.nav-previous a, .nav-next a { margin: 10px; padding: 0; text-decoration: none; font-family: Britannic, Tahoma; font-size: 14px; color: #635e51; text-shadow: 0 1px 0 #fff;}
+  
+.archive-meta { display: none;}
+
+/***** HEADER *****/
+header { margin: 0 auto; padding: 0; height: 110px; position: relative; background: url(images/header-bg.jpg) repeat-x 0 0;}
+	#header-wrapper { margin: 0 auto; padding: 0; width: 960px; position: relative;}
+		#header-info-holder { margin: 0 auto; padding: 0; width: 960px; height: 110px; position: relative;}
+			.blogname { margin: 0 auto; font-family: Britannic, "Lucida Grande", sans-serif; font-size: 40px; position: absolute; left: 0; bottom: 0;}
+			.blogname a { text-decoration: none; color: #e0d9c6; text-shadow: 0 1px 0 #000;}
+			.blogname a:hover { color: #FFF;}
+			.blogdesc { margin: 0 auto 10px; padding: 0; color: #e0d9c6; text-shadow: 0 1px 0 #000; position: absolute; bottom: 0; right: 0;}
+
+/***** NAVIGATION *****/	
+nav { margin: 0 auto; padding: 0; height: 50px; position: relative; background: url(images/nav-bg.jpg) repeat-x 0 0;}
+	#nav-wrapper { margin: 0 auto; padding: 0; width: 960px; position: relative;}
+		.menu { margin: 0 auto; padding: 0;}
+		.menu ul { margin: 0 auto; padding: 0; position: relative; font-family: Britannic, "Lucida Grande", sans-serif; font-size: 18px; text-shadow: 0 1px 0 #FFF;} 
+		.menu ul li { margin: 0 auto; padding: 13px 15px 0 15px; display: block; float: left;}
+		.menu ul li:hover { margin: 0 auto; padding: 13px 15px 0 15px; height: 36px; display: block; float: left; background: url(images/nav-bg.jpg) repeat-x 0 -50px;}
+		.menu ul a { margin: 0; padding: 0; text-decoration: none; display: block; width: 100%; height: 100%; color: #635e51; font-family: Britannic, "Lucida Grande", sans-serif; font-size: 18px; text-shadow: 0 1px 0 #FFF;}
+		.menu ul li:hover a {  color: #FFF; text-shadow: 0 1px 0 #000;}
+		.menu ul li ul a { display: block; width: 100%; height: 100%;}
+		.menu ul ul { margin: -1px 0 0 -15px; padding: 0; border: none; border-bottom: none; background: #9aa1bb; position: absolute; z-index: 500; *z-index: 500; width: auto;}
+		.menu ul ul a { text-decoration: none;}
+		.menu ul ul a:hover { text-decoration: underline;}
+		.menu ul ul li { margin: 0 auto; padding: 13px 15px 0 15px; height: 37px; width: auto; display: block; float: none; border-bottom: thin solid #575b6a;}
+		.menu ul ul li:hover { margin: 0 auto; padding: 13px 15px 0 15px; height: 37px; background: #616280; float: none;}
+		
+		.menu ul ul, .menu ul li:hover ul { display: none;}
+		.menu ul li:hover ul { display: block;}	
+
+/***** MAIN *****/		
+#container { margin: 25px auto 50px; padding: 0; width: 960px; position: relative; overflow: auto; height: auto !important; height: 100%;}
+	#main { margin: 0; padding: 0; float: left; width: 644px; border: thin solid #938f83; background: #beb59d; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+		#content-holder { margin: 8px; padding: 0; position: relative; overflow: auto; width: 628px; background: #FFF;}
+		
+		@media screen and (-webkit-min-device-pixel-ratio:0) {
+			#content-holder { margin: 8px; padding: 0; position: relative; overflow: auto; width: 628px; background: #FFF;}
+		}
+
+	
+	aside { margin: 0; padding: 0; width: 312px; float: left;}
+		aside ul li#isearch { margin: 10px 0 0 0; padding: 0; width: 312px; height: 68px; background: url(images/aside-bar.png) no-repeat 0 0;}
+			#searchform { margin: 0 auto; padding: 0; position: relative;}
+				#s { margin: 5px 0 5px 5px; padding: 0 40px 0 10px; border: thin solid #dedbdb; width: 250px; height: 37px; border-radius: 0 5px 5px 0; background: #f2f2f2; font-family: Britannic, Tahoma; color: #555;}
+				#searchsubmit { margin: 11px 15px 0 0; padding: 0; border: 0; position: absolute; right: 0; text-indent: -9999px; width: 26px; height: 25px; background: url(images/searchsubmit-button.png) no-repeat 0 0;}
+				#searchsubmit:hover { cursor: pointer;}
+				.screen-reader-text { display: none;}
+			
+			
+		aside ul li#category, aside ul li#archive, aside ul li#meta { margin: 0 auto 10px; padding: 0;}
+		aside ul li#category div, aside ul li#archive div, aside ul li#meta div { margin: 0 auto; padding: 0; position: relative;}
+		aside ul li#category div h2, aside ul li#archive div h2, aside ul li#meta div h2 { margin: 0; padding: 9px 0 0 0; width: 312px; height: 59px; color: #333; font-family: BradleyHand, Britannic; text-align: center; font-size: 24px; background: url(images/aside-bar.png) no-repeat 0 0;}
+		
+		aside ul li#category div ul, aside ul li#archive div ul, aside ul li#meta div ul { margin: -15px 0 0 0; padding: 0; border-bottom: thin solid #fff;}
+		aside ul li#category div ul a, aside ul li#archive div ul a, aside ul li#meta div ul a { text-decoration: none; color: #635e51; font-family: Britannic, "Lucida Grande", sans-serif; font-size: 16px; text-shadow: 0 1px 0 #fff;}
+		aside ul li#category div ul a:hover, aside ul li#archive div ul a:hover, aside ul li#meta div ul a:hover { text-decoration: underline;}
+		aside ul li#category div ul li, aside ul li#archive div ul li, aside ul li#meta div ul li{ margin: 0; padding: 10px 0 10px 30px; border-top: thin solid #fff; border-bottom: thin solid #938f83; background: url(images/arrow-bullet.png) no-repeat left center;}
+		aside ul li#category div ul li:first-child, aside ul li#archive div ul li:first-child, aside ul li#meta div ul li:first-child { border-top: none;} 
+		/*aside ul li#category div ul li:last-child, aside ul li#archive div ul li:last-child, aside ul li#meta div ul li:last-child { border-bottom: none;}*/
+		
+		
+		
+/***** FOOTER *****/
+footer { margin: 0 auto; padding: 0; position: relative; height: 415px; background: url(images/footer-bg.jpg) repeat-x 0 0;}
+	#footer-wrapper { margin: 0 auto; padding: 0; width: 960px;}
+		#upper-footer { margin: 0 auto; padding: 0; height: 340px; position: relative; overflow: auto; background: url(images/footer-overlay-bg.png) no-repeat top center;}
+			.blogroll, .recent-comments, .recent-post { margin: 0 auto; padding: 0; width: 320px; height: 340px; float: left; background: url(images/footer-separator-line.png) no-repeat center right;}
+			.recent-post { background: none;}			
+			
+			.blogroll h3, .recent-comments h3, .recent-post h3 { margin: 10px auto; padding: 0; text-align: center; font-family: Britannic; font-size: 18px; color: #fff; text-shadow: 0 1px 0 #000;}
+			.blogroll li { list-style: none !important;}
+			.blogroll ul { margin: 0 auto; padding: 0 10px 0 0; list-style: none;}
+			.blogroll a { color: #fff; text-shadow: 0 1px 0 #000; text-decoration: none; font-weight: bold;}
+			.blogroll ul li { margin: 0 auto; padding: 5px 0 5px 15px; border-top: thin solid #c0bcb2; border-bottom: thin solid #726c5b; background: url(images/disc-bullet.png) no-repeat left center;}
+			.blogroll ul li:hover a { text-decoration: underline;}
+			.blogroll ul li:first-child { border-top: 0;}
+			.blogroll ul li:last-child { border-bottom: 0;}
+			.blogroll .linkcat h2 { display: none;}
+			
+			.recent-comments a { text-decoration: none; color: #fff; text-shadow: 0 1px 0 #000;}
+			.recent-comments a:hover { text-decoration: underline;}
+			.recent-comments ul { margin: 0 auto; padding: 0;}
+			.recent-comments ul li { margin: 0 auto 5px; padding: 0 5px 0 0; clear: both;}
+			.recent-comments ul li .avatar { margin: 0 5px 5px 5px; padding: 0; display: block; float: left; border: 2px solid #fff;}
+			
+			.recent-post ul { margin: 0 auto; padding: 0 0 0 10px; list-style: none;}
+			.recent-post a { color: #fff; text-shadow: 0 1px 0 #000; text-decoration: none; font-weight: bold;}
+			.recent-post ul li { margin: 0 auto; padding: 5px 0 5px 15px; border-top: thin solid #c0bcb2; border-bottom: thin solid #726c5b; background: url(images/disc-bullet.png) no-repeat left center;}
+			.recent-post ul li:hover a { text-decoration: underline;}
+			.recent-post ul li:first-child { border-top: 0;}
+			.recent-post ul li:last-child { border-bottom: 0;}			
+			
+		#lower-footer { margin: 0 auto; padding: 0; height: 75px; position: relative; overflow: auto; font-family: BradleyHand, Britannic, "Lucida Grande", sans-serif; font-size: 16px; font-style: italic; color: #fff; text-shadow: 0 1px 0 #000;}
+			#lower-footer a { color: #fff; text-decoration: none; text-shadow: 0 1px 0 #000;}
+			#lower-footer a:hover { color: #c90;}
+			#lower-footer p { margin: 30px 0 0 0; padding: 0;}
+			
+/***** BLOG, SINGLE, CATEGORY, ARCHIVES, SEARCHES & PAGES *****/
+.page .entry-content { margin: 0 auto; padding: 0; border-top: thin solid #fff; border-bottom: thin solid #beb59d; background: url(images/post-bg.jpg) no-repeat 0 0; overflow: auto;}
+.page .page-content { margin: 10px; padding: 0;}
+.post, .entry-single, .commentlist li, .comment-form { margin: 0 auto; padding: 0; position: relative; overflow: auto; border-top: thin solid #fff; border-bottom: thin solid #beb59d; background: url(images/post-bg.jpg) no-repeat 0 0;}
+.post a { text-decoration: none; color: #a08e73; text-shadow: 0 1px 0 #fff; font-weight: bold;}
+.post a:hover { text-decoration: underline; color: #635e51;}
+
+.post .entry-content, 
+.post .entry-summary,
+.post .post-entry { margin: 10px; padding: 0; position: relative;}	
+	
+.post .entry-content .post-details, 
+.post .entry-summary .post-details { margin: 0 auto; padding: 0; position: relative; overflow: auto;}
+
+.post .entry-content .post-details h2.entry-title a, 
+.post .entry-summary .post-details h2.entry-title a { margin: 0; padding: 0; text-decoration: none; font-family: Britannic, Tahoma; font-size: 24px; color: #635e51; text-shadow: 0 1px 0 #fff;}
+.post .post-entry h1.entry-title { margin: 0; padding: 0; text-decoration: none; font-family: Britannic, Tahoma; font-size: 24px; color: #635e51; text-shadow: 0 1px 0 #fff;}
+
+.post .entry-content .post-details .image-content, 
+.post .entry-summary .post-details .image-content,
+.post .entry-single .post-entry .image-content { margin: 0 0 10px 10px; padding: 0; float: right; width: 136px; height: 136px; border: 2px solid #635e51; background: #beb59d;}
+
+.post .entry-content .post-details .image-content .wp-post-image, 
+.post .entry-summary .post-details .image-content .wp-post-image,
+.post .entry-single .post-entry .image-content .wp-post-image { margin: 0; padding: 0; width: 136px; height: 136px;}
+
+.post .entry-content .post-details .the-content, 
+.post .entry-summary .post-details .the-content,
+.post .entry-single .post-entry .the-content, { margin: 0 auto 10px; padding: 0 0 10px 0; min-height: 140px; height: 100%; height: auto !important; position: relative;}
+
+.post .entry-content .post-details .the-content p,
+.post .entry-summary .post-details .the-content p { margin: 0 auto 10px; padding: 0 0 10px 0;}
+.post .entry-single .post-entry .the-content p { margin: 0 auto 10px; padding: 0 0 10px 0;}
+
+.post .entry-summary .post-details .the-content p > a { margin: 0; padding: 0; position: absolute; left: 0; bottom: 0;}
+
+.post .entry-content .entry-meta,
+.post .entry-summary .entry-meta { margin: 0 auto 10px; padding: 0; position: relative; overflow: auto; color: #635e51; text-align: center;}
+.post .entry-single .post-entry .entry-meta { margin: 0 auto 10px; padding: 0; position: relative; overflow: auto; color: #635e51; text-align: left;}
+
+/***** POST-DATE *****/
+.post-date { margin: 0 0 10px 0; padding: 0; color: #bfb290; font-weight: bold; text-shadow: 0 1px 0 #fff;}
+
+/***** COMMENTS *****/
+.commentbox, .authorcomment { margin: 10px; padding: 0;}
+	.the-avatar { margin: 0 5px 10px 0; padding: 0; float: left; width: 50px; height: 50px;}
+	.the-avatar .avatar { border: 2px solid #635e51;}
+	.the-comment { margin: 0; padding: 0; float: left; width: 553px;}
+		.commentmetadata { margin: 0 0 10px 0; padding: 0;}
+		.comments-content { margin: 0 auto 10px; padding: 0; float: left; width: 553px; clear: both;}
+		.timestamp { margin: 0 0 10px 0; padding: 0; font-size: 11px;}
+		
+.letscomment { margin: 10px; padding: 0;}
+	
+	.admin-panel { margin: 0 auto 10px; padding: 0;}
+	.txtname, .txtmail { margin: 0 10px 10px 0; padding: 0 0 0 2px; width: 190px; height: 25px; border: thin solid #beb59d; font-family: "Lucida Grande", Tahoma; font-size: 12px;}
+	.txtsite { margin: 0 0 10px 0; padding: 0 0 0 2px; width: 190px; height: 25px; border: thin solid #beb59d; font-family: "Lucida Grande", Tahoma; font-size: 12px;}
+	.txtarea { margin: 0 auto 10px; padding: 0; width: 606px; height: 150px; border: thin solid #beb59d; font-family: "Lucida Grande", Tahoma; font-size: 12px;}	
